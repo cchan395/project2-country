@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: lemontxt;
+    src: url(../fonts/Lemon-Regular.ttf);
+}
+
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+  body {
+	font-family: Montserrat, Arial,"Helvetica Neue",Helvetica,sans-serif;
+    text-align: center;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #FFF;
+	color: #000;
+	margin: 0 auto;
+}
+
+h1{
+    font-family: lemontxt, 'Times New Roman', Times, serif;
+    font-size: 15rem;
+    margin:0;
+    padding:0;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+a{
+	text-decoration: none;
+    color: #003800;
+}
+
+a:visited{
+	color: #053505;
+}
+
+a:hover{
+	color: #338033;;
+}
+
+a:active{
+	color: #191970;
+}
+
+a:focus{
+    outline: 1px dotted #000;
+}
+
+/*header*/
+header{
+	background-color: #ebebeb;
+	margin: 0 auto;
+    font-size: 3rem;
+}
+
+ul{
+	padding:0;
+	margin:0;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.8rem;
+}
+
+nav ul li:first-child{
+    border-right: solid .2rem #000;
+    padding-right: 2rem;
+}
+
+/*Main Section*/
+#about li{
+    font-size: 1.5rem;
+}
+
+#portfolio ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+figure{
+    box-shadow: 0 6px 20px 0 #00000030;
+    text-align: center;
+    padding: 4.5rem 3rem;
+    margin: 1.5rem auto;
+    flex-grow: 1;
+}
+
+#portfolio img{
+    min-width:20rem;
+}
+
+/*Media Queries main*/
+@media (max-width: 45em) {
+
+    #portfolio ul{
+        flex-direction: column;
+    }
+}
+
+/*Footer*/
+footer{
+    background-color: #ebebeb;
+    margin-top: 3rem;
+    padding: 1rem 0;
+}
+
+footer a{
+    color: mediumblue;
+}
+
+/*Media Queries footer*/
+@media (max-width: 75em) {
+
+    h1{
+        margin: 0;
+        padding: 0;
+        font-size: 12vw;
+    }
+}
