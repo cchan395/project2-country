@@ -15,7 +15,7 @@ html {
 	box-sizing: inherit;
   }
 
-  body {
+body {
 	font-family: Montserrat, Arial,"Helvetica Neue",Helvetica,sans-serif;
     text-align: center;
 	font-size: 1rem;
@@ -72,6 +72,18 @@ header{
     font-size: 3rem;
 }
 
+header figure{
+    display: flex;
+    justify-content: center;
+    text-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+header figure img{
+    min-width: 7rem;
+}
+
 ul{
 	padding:0;
 	margin:0;
@@ -82,7 +94,7 @@ nav li{
 	padding: 0.8rem;
 }
 
-nav ul li:first-child{
+header nav li{
     border-right: solid .2rem #000;
     padding-right: 2rem;
 }
