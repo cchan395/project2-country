@@ -1,4 +1,5 @@
-/* Typography
+/*------------------------------------------- 
+Typography
 --------------------------------------------- */
 body {
 	font-family: Montserrat, Arial,"Helvetica Neue",Helvetica,sans-serif;
@@ -29,7 +30,8 @@ h3{
 }
 
 
-/* Elements
+/*------------------------------------------- 
+Elements
 --------------------------------------------- */
 ul,
 ol {
@@ -42,7 +44,8 @@ figure{
     padding:0;
 }
 
-/* Links
+/*------------------------------------------- 
+Links
 --------------------------------------------- */
 a{
 	text-decoration: none;
@@ -65,9 +68,12 @@ a:focus{
     outline: 1px dotted #000;
 }
 
+a.underline{
+    text-decoration: underline;
+}
 
-
-/* Header
+/*------------------------------------------- 
+Header
 --------------------------------------------- */
 header{ 
     font-size:2rem;
@@ -120,8 +126,13 @@ header img{
 
 
 
-/* Main
+/*------------------------------------------- 
+Main
 --------------------------------------------- */
+
+
+/*HOME page*/
+
 .home-section{
     position: relative;
 }
@@ -131,14 +142,12 @@ header img{
 }
 
 @media screen and (max-width: 68em) {
-   .home-section h1{
+   .home-section h1, .grid-map img{
         display:none;
     }
 }
 
 @media screen and (min-width: 50em) {
-
-	/* Home - Header Video and h1 */
     .home-container{
         overflow:hidden;
     }
@@ -158,10 +167,12 @@ header img{
         left:0;
         right:0;
     }
+}
 
+/*NATURE page*/
 
-	/* Nature - Gallery Grid*/
-    .nature-gallery {
+@media screen and (min-width: 50em) {
+    .nature-section {
 		display: grid;
         gap: 1rem 1rem;
 		grid-template-columns: repeat(3, 18.75rem);
@@ -169,7 +180,7 @@ header img{
         margin: 3rem auto;
 	}
 
-	.nature-gallery img {
+	.nature-section img {
 		display: block;
 		width: 100%;
 		height: 20rem;
@@ -184,66 +195,122 @@ header img{
 		grid-column: span 1;
 		order:-1;
 	}
-	
+}
 
+/*ACTIVITIES page*/
 
-	/* Activities */
+form {
+    background: #f4f7f8;
+    border-radius: 0.75rem;
+    max-width: 35rem;
+    margin: 1.8rem auto;
+    padding: .6rem 1.25rem;
+}
+
+input, textarea, select {
+    border: 3px solid #e8eeef;
+    background-color: #e8eeef;
+    color: #000000;
+    font-size: 1rem;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: dotted 3px #008000;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset:nth-of-type(2) {
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.number {
+    background-color: #008000;
+    color: #fff;
+    height: 1.9rem;
+    width: 1.9rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 4px;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 100%;
+}
+
+input[type="submit"] {
+    padding: 1rem 2rem;
+    color: #FFF;
+    background-color: #008000;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 0.85rem;
+    width: 70%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
     .grid-map {
-		display:grid;
-		grid-template-columns: repeat(5, 1fr);
-		justify-content: space-between;
-		gap: 1rem;
+		display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:1rem;
 	}
 
 	.grid-map div {
 		min-width: 6rem;
 		min-height: 8rem;
-		background-color: #BBE1F2;
+		background-color: #f4f7f8;
 	}
 
-	.grid-map .park {
-		background-color: #69c869;
-		grid-column: 2/4;
-		grid-row: 2/4;
+    .whale img{
+		object-fit: cover;
+        height: 100%;
 	}
+    
+}
 
-	.grid-map .building {
-		background-color: #a60000;
-		grid-column: 5/6;
-		grid-row: 1/3;
-	}
+/*CREDITS page*/
 
-	.grid-map .retail {
-		background-color: #825099;
-		grid-column: 1/2;
-		grid-row: 2/4;
-	}
+table, 
+th, 
+td {
+	border: 1px dashed #000;
+	text-align: left;
+    margin: 3rem auto;
+    padding: 1rem;
+}
 
-	.grid-map .school {
-		background-color: #f2d254;
-		grid-column: 4/6;
-	}
-	
+td a{
+    color: blue;
+}
 
+@media screen and (min-width: 50em) {
 
-	/* Credits */
-    .grid-full{
-		display:grid;
-		background-color: #ffffff;
-		grid-template-columns: repeat(2,1fr);
-		/*gap: 1rem 1rem;*/
-	}
-
-	.grid-full-item{
-		background-color: #D45837;
-		padding: 0 3rem;
-	}
-
-	
 }
 
 
-/* Footer
+/*------------------------------------------- 
+Footer
 --------------------------------------------- */
 
 @media (min-width: 50em) {

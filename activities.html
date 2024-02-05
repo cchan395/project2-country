@@ -2,7 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index">
     <title>Activities</title>
+    <meta name="description" content="Experience Canada's British Columbia Canada with our available tour packages. Book now for your next adventure.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,6 +22,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <a href="#skip">Skip to Content</a>
     <header>
         <nav>
             <a href="./index.html">
@@ -28,117 +31,66 @@
             <ul>
                 <li><a href="./index.html">Home </a></li>
                 <li><a href="./nature.html">Nature</a></li>
-                <li><a href="./activities.html">Activities</a></li>
+                <li><a class="underline" href="./activities.html">Activities</a></li>
                 <li><a href="./credits.html">Credits</a></li>
             </ul>
         </nav>
         <h1>Fun Activities</h1>
     </header>
-    <main>
-        <section id="portfolio">
-            <h2>Portfolio: Look at what I can do!</h2>
-            <article>
-                <h3>HTML and CSS Projects</h3>
-                <figure>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                    </ul>
-                </figure>
-            </article>
-            <article>
-                <h3>JavaScript Projects</h3>
-                <figure>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                    </ul>
-                </figure>
-            </article>
-            <article>
-                <h3>WordPress Website</h3>
-                <figure>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                    </ul>
-                </figure>
-            </article>
-            <article>
-                <h3>Online Stores</h3>
-                <figure>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/box-img.svg" alt="image placeholder">
-                            </a>
-                            <h4>coming soon</h4>
-                        </li>
-                    </ul>
-                </figure>
-            </article>
+    <main id="skip">
+        <section>
+            <div class="grid-map">
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+                <div class="whale"><img src="media/img2.jpg" alt="Reflective water of BC mountains"></div>
+                <div class="activities-section">
+                    <form action="#" method="post">
+                        <h2>Book Now</h2>
+            
+                        <fieldset>
+                            <legend><span class="number">1</span>Your contact info</legend>
+            
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="user-name">
+            
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user-email">
+            
+                            <label for="address">Hotel or address for pick-up:</label>
+                            <input type="text" id="address" name="user-address">
+            
+                            <label for="phone">Mobile #:</label>
+                            <input placeholder="1-XXX-XXX-XXXX" type="phone" id="phone" name="user-phone">
+            
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend><span class="number">2</span>Pick a tour</legend>
+                            <select id="tour" name="user-tour">
+                                <option value="Whistler">Whistler Weekend Package $899</option>
+                                <option value="Okanagon">Okanagon Wine Tour $799</option>
+                                <option value="Sunshine Coast">Sunshine Coast Excursion $900</option>
+                                <option value="Penticton">Penticton Music Festival $599</option>
+                                <option value="Tofino">Tofino exploration $3500</option>
+                                <option value="Haida Gwaii">Haida Gwaii $6000</option>
+                            </select>
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
 
-        </section><!--/work-->
+                <div class="whale"><img src="media/img2.jpg" alt="Reflective water of BC mountains"></div>
+
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+
+                <div><img src="media/wallpaper-green.jpg" alt="wallpaper of vector green leaf"></div>
+
+            </div>
+
+        </section>
     </main>
     <footer>
         <p>For further inquiries, <a href="mailto:example@example.com">email me</a></p>
